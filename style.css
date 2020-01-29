@@ -1,0 +1,186 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: linear-gradient(to right, #b92b27, #1565c0);
+    height: 95vh;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.heading {
+    font-family: 'Noto Serif', serif;
+    color: rgb(243, 243, 243);
+    font-size: 38px;
+    text-align: center;
+}
+
+.todolist {
+    text-align: center;
+    color: rgb(243, 243, 243);
+}
+
+.input {
+    font-family: 'Noto Serif', serif;
+    font-size: 18px;
+}
+
+.btn {
+    padding: 5px;
+    border: none;
+    border-radius: 2px;
+    font-family: 'Fredoka One', cursive;
+    color: inherit;
+    background: linear-gradient(to right, #b92b27, #1565c0);
+    cursor: pointer;
+    outline: none;
+    transition: all 0.5s linear;
+}
+
+.btn:active {
+    opacity: 0.7;
+    box-shadow: 0 0 5px 5px rgba(252, 252, 252, 0.7);
+    transform: scale(1);
+}
+
+.addBtn {
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.addBtn:hover {
+    background: #1565c0;
+    transform: scale(1.07);
+
+}
+
+#inputToDo {
+    font-family: 'Noto Serif', serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #000;
+    padding-left: 5px;
+    border: none;
+    border-radius: 2px;
+    background-color: rgb(240, 240, 240);
+}
+
+.filter-wrapper {
+    margin: 10px auto 5px;
+    text-align: center;
+    position: relative;
+    left: 52px;
+}
+
+#filter {
+    font-family: 'Noto Serif', serif;
+    width: 238px;
+
+    color: #000;
+    border-radius: 2px;
+    border: none;
+    opacity: 0.6;
+}
+
+#filter:hover, #filter:focus, #clearFilterBtn {
+    opacity: 1;
+}
+
+.filterBtn:hover {
+    background: #b92b27;
+}
+
+#statusBar {
+    font-family: 'Noto Serif', serif;
+    font-size: 18px;
+}
+
+#clearFilterBtn {
+    opacity: 0.6;
+}
+
+#list {
+    color: rgb(34, 34, 34);
+    background-color: rgb(240, 240, 240);
+    margin: auto;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15), 10px 10px 0 -5px #eee, 10px 10px 1px -4px rgba(0, 0, 0, 0.15), 20px 20px 0 -10px #eee, 20px 20px 1px -9px rgba(0, 0, 0, 0.15), 30px 30px 0 -15px #eee, 30px 30px 1px -14px rgba(0, 0, 0, 0.15);
+    padding: 30px;
+}
+
+#list h3 {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 36px;
+    font-weight: 800;
+    margin: 5px 0;
+}
+
+#toDos {
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: 800;
+    font-size: 24px;
+    width: 100%;
+}
+
+#toDos .li {
+    font-family: 'Shadows Into Light', cursive;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0 0 10px;
+    opacity: .8;
+
+
+}
+
+.li::before{
+    content: '✏️';
+    opacity: 0.8;
+}
+
+.li:active{
+    opacity: 1;
+}
+
+#toDos .li:nth-child(2n+1) {
+    background: #fff;
+    border-radius: 2px;
+}
+
+.deleteBtn {
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: 800;
+    background: none;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 26px;
+    padding: 2px 12px ;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.7);
+    margin: 2px;
+    opacity: 1;
+}
+
+.deleteBtn:hover, .clearBtn:hover {
+    background: #b92b27;
+    transform: scale(1.1);
+
+}
+
+.deleteBtn:active {
+    box-shadow: 0 0 5px 5px rgba(241, 6, 6, 0.7);
+}
+
+.clearBtn {
+    margin-top: 30px;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding: 0 25px;
+}
+
+/* btn hover bright red,
+add btn hover soft green,
+edit with pencil :before element */
